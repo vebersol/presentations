@@ -1,0 +1,226 @@
+body {
+	font: normal 16px "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+	background-color: white;
+}
+
+section {
+	padding: 20px 40px;
+	background-color: white;
+	color: black;
+	box-sizing: border-box;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+h2 small, h3 small {
+	font-size: 0.5em;
+}
+
+h3 {
+	font-size: 2.5em;
+}
+
+p {
+	font-size: 2em;
+	line-height: 2;
+}
+
+.single-line {
+	line-height: 1;
+}
+
+strong {
+	color: #007AA3;
+}
+
+.highlight {
+	color: #007AA3;
+}
+
+a {
+	word-wrap: break-word;
+	color: #FF9524;
+}
+
+figure {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	box-sizing: border-box;
+}
+
+p img,
+figure img {
+	width: 100%;
+	height: auto;
+}
+
+figure figcaption {
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	bottom: -20px;
+	left: 0;
+	font-size: 0.75em;
+	line-height: 1;
+}
+
+ul {
+	list-style: square;
+}
+
+ul li {
+	font-size: 2em;
+	line-height: 2;
+
+}
+
+ul li ul {
+	list-style: disc;
+}
+
+ul li ul li {
+	font-size: 1em;
+}
+
+.deck-status {
+	font-size: 0.75em;
+	color: black;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.col-1-2 {
+	width: 50%;
+	float: left;
+}
+
+.map-wrapper {
+	position: relative;
+}
+
+.map-wrapper span {
+	display: block;
+	width: 200px;
+	height: 200px;
+	background-color: rgba(255, 0, 0, 0.25);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -100px 0 0 -100px;
+	border-radius: 200px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.center {
+	transform: scale(0);
+	animation-name: radius1;
+}
+
+.middle {
+	transform: scale(0);
+	animation-name: radius2;
+}
+
+.external {
+	transform: scale(0);
+	animation-name: radius3;
+}
+
+@keyframes radius1 {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+@keyframes radius2 {
+    from {transform: scale(0);}
+    to {transform: scale(2);}
+}
+
+@keyframes radius3 {
+    from {transform: scale(0);}
+    to {transform: scale(4);}
+}
+
+.vert-align {
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	margin-top: -5em;
+	width: 100%;
+	margin-left: -40px;
+	padding: 0 40px;
+}
+
+.vert-align p {
+	margin: 0;
+}
+
+/*@media print {
+	p {
+		font-size: 1em;
+		line-height: 1;
+	}
+
+	ul li {
+		font-size: 1em;
+		line-height: 1;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1em;
+	}
+
+	.vert-align {
+		position: static;
+		top: 0;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.map-wrapper span {
+		display: none;
+	}
+
+	.center {
+		transform: scale(1) !important;
+	}
+
+	.middle {
+		transform: scale(2) !important;
+	}
+
+	.external {
+		transform: scale(4) !important;
+	}
+}*/
